@@ -11,3 +11,5 @@ export PATH=/usr/local/src/go/bin:$PATH
 export GOROOT="/usr/local/src/go/"
 export GOOS="darwin"
 export GOARCH="amd64"
+
+export LSCOLORS=Bxfxcxdxcxegedabagacad
