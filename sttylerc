@@ -1,0 +1,13 @@
+export DEFAULT_USER=achesebr
+
+# IRC stuff
+export IRCNICK="chesebro"
+export IRCUSER="chesebro"
+export IRCNAME="chesebro"
+export IRCSERVER="ircs.amazon.com:6697"
+
+# GoLang stuff
+export PATH=/usr/local/src/go/bin:$PATH
+export GOROOT="/usr/local/src/go/"
+export GOOS="darwin"
+export GOARCH="amd64"
