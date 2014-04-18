@@ -3,6 +3,13 @@ set nocompatible
 syntax on
 fixdel
 
+" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set laststatus=2
+
+colorscheme xoria256
+
+filetype plugin indent on
+filetype plugin on
 set gfn=Monospace\ 9 
 set tabstop=4
 set shiftwidth=4
@@ -16,9 +23,7 @@ set number
 set ruler
 set nobackup
 set noswapfile
-
 set t_Co=256
-colorscheme xoria256
 
 highlight Cursor guibg=Green guifg=NONE
 highlight lCursor guibg=Cyan guifg=NONE
@@ -42,20 +47,3 @@ nmap <silent> <C-e> :NERDTreeToggle<CR>
 nmap <silent> <C-y> :TlistToggle<CR>
 nnoremap ; :
 
-filetype plugin indent on
-filetype plugin on
-
-let mapleader = ","
-
-set statusline=   " clear the statusline for when vimrc is reloaded
-set statusline+=%-3.3n\                      " buffer number
-set statusline+=%f\                          " file name
-set statusline+=%h%m%r%w                     " flags
-set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
-set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
-set statusline+=%{&fileformat}]              " file format
-set statusline+=%=                           " right align
-set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
-set statusline+=%b,0x%-8B\                   " current char
-set statusline+=b%o\ \|\ %-14.(%l,%c%V%)\ %<%P   " offset
-set laststatus=2
