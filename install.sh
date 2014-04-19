@@ -1,8 +1,10 @@
 #!/bin/sh
 
 # Setup vim theme
-mkdir -p ~/.vim/colors
-ln -s ~/.sttyle/themes/xoria256.vim ~/.vim/colors
+ln -s ~/.sttyle/vim ~/.vim
+ln -s ~/.sttyle/vimrc ~/.vimrc
 
 # Link gitconfig
-ln -s ~/.sttyle/scripts/.gitconfig ~/
+ln -s ~/.sttyle/git/gitconfig ~/.gitconfig
+
+
