@@ -1,11 +1,28 @@
-#!/bin/sh
+#!/bin/bash
 
-# Setup vim theme
-ln -s ~/.sttyle/vim ~/.vim
-ln -s ~/.sttyle/vimrc ~/.vimrc
-ln -s ~/.sttyle/vrapperrc ~/.vrapperrc
+# Seting screenrc and tmux.conf
+if [ ! -f ~/.screenrc ]; then
+    ln -s ~/.sttyle/screenrc ~/.screenrc
+fi
+if [ ! -f ~/.tmux.conf ]; then
+    ln -s ~/.sttyle/tmux.conf ~/.tmux.conf
+fi
+
+# Setup vim
+if [ ! -d ~/.vim ]; then
+    ln -s ~/.sttyle/vim ~/.vim
+fi
+if [ ! -f ~/.vimrc ]; then
+    ln -s ~/.sttyle/vimrc ~/.vimrc
+fi
+if [ ! -f ~/.vrapperrc ]; then
+    ln -s ~/.sttyle/vrapperrc ~/.vrapperrc
+fi
 
 # Link gitconfig
-ln -s ~/.sttyle/git/gitconfig ~/.gitconfig
+if [ ! -f ~/.gitconfig ]; then
+    ln -s ~/.sttyle/git/gitconfig ~/.gitconfig
+fi
 
-
+grep -q sttylerc ~/.bashrc && echo "bashrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.bashrc
+grep -q sttylerc ~/.zshrc && echo "zshrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.zshrc
