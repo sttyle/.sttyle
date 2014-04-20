@@ -40,7 +40,6 @@
     # still available for use.
     lg = log -10
 
-    pr = !post-review --parent HEAD~1 --target-groups=krf,kindle-reader-framework
 
     # This alias allows me to see the version of "git log" output before it was
     # changes by format.pretty above
