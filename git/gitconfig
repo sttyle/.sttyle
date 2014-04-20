@@ -1,15 +1,8 @@
 [user]
     name = achesebr
-    email = achesebr@amazon.com
-    groups = reader-team
 
 [color]
     ui = true
-
-# When using the post-review tool provided by Amazon Builder Tools team (in RBTools package),
-# this option automatically appends the CR url to the commit message
-[amazon]
-    append-cr-url = true
 
 [core]
     editor = vim
