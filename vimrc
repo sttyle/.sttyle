@@ -3,7 +3,8 @@ set nocompatible
 syntax on
 fixdel
 
-" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set t_Co=256
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
 colorscheme xoria256
@@ -23,7 +24,6 @@ set number
 set ruler
 set nobackup
 set noswapfile
-set t_Co=256
 
 highlight Cursor guibg=Green guifg=NONE
 highlight lCursor guibg=Cyan guifg=NONE

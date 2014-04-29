@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/achesebr/Perforce/achesebr_lmain/j5r/apps/booklet_reader/PDFReader-impl'
-let g:netrw_dirhist_2='/Users/achesebr/Perforce/achesebr_lmain/j5r/apps/booklet_reader/Reader-utils'
-let g:netrw_dirhist_3='/Users/achesebr/Perforce/achesebr_lmain/j51r/apps/reader_sharing'
-let g:netrw_dirhist_4='/usr/local/share/lua'
-let g:netrw_dirhist_5='/Users/achesebr/.BitchX'
-let g:netrw_dirhist_6='/usr/local/src/git-plugins'
-let g:netrw_dirhist_7='/Users/achesebr/.oh-my-zsh/plugins'

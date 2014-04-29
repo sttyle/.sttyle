@@ -6,6 +6,7 @@
 
 [core]
     editor = vim
+	excludesfile = ~/.gitignore_global
 
 # For resolving conflicts, I have found nothing better than the p4merge visual merge tool.
 # Install it for free from perforce website and set these options.
