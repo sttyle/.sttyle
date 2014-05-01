@@ -5,7 +5,7 @@ filetype plugin indent on
 fixdel
 
 set t_Co=256
-source /home/local/ANT/achesebr/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
 colorscheme xoria256
