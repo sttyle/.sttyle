@@ -1,15 +1,15 @@
 execute pathogen#infect()
 set nocompatible
 syntax on
+filetype plugin indent on
 fixdel
 
 set t_Co=256
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /home/local/ANT/achesebr/.local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
 colorscheme xoria256
 
-filetype plugin indent on
 filetype plugin on
 set gfn=Monospace\ 9 
 set tabstop=4
