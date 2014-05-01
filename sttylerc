@@ -1,3 +1,5 @@
 alias untar="tar zxvf $@"
 
 export LSCOLORS=Bxfxcxdxcxegedabagacad
+export SHELL=/bin/zsh
+export EDITOR="vim"
