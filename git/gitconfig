@@ -55,6 +55,3 @@
 [push]
 	default = simple
 
-[amazon]
-	append-cr-url = true
-
