@@ -32,7 +32,6 @@
 
 # And finally, some convenient, time-saving aliases I feel handicapped without.
 [alias]
-    rb = !post-review --server="https://cr.amazon.com"
     # Logging
     lg = log -10
     lgd = log --pretty=full --date=iso
