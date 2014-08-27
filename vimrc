@@ -1,4 +1,5 @@
 execute pathogen#infect()
+
 set nocompatible
 syntax on
 filetype plugin indent on
@@ -24,6 +25,8 @@ set number
 set ruler
 set nobackup
 set noswapfile
+set ignorecase
+set smartcase
 
 highlight Cursor guibg=Green guifg=NONE
 highlight lCursor guibg=Cyan guifg=NONE
@@ -31,6 +34,7 @@ highlight lCursor guibg=Cyan guifg=NONE
 let Tlist_WinWidth = 60
 let Tlist_Use_Right_Window = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
 
 map <C-T> :tabnew 
 map <C-K> :tabnew %<.h<CR>
@@ -40,10 +44,10 @@ map <F1> <Esc>
 imap <F1> <Esc>
 map <S-CR> O<Esc>
 map <CR> o<Esc>
+vnorem // y/<c-r>"<cr>
 
 nmap <silent> <leader>/ :nohlsearch<CR>
 nmap <silent> <C-N> :silent noh<CR>
 nmap <silent> <C-e> :NERDTreeToggle<CR>
 nmap <silent> <C-y> :TlistToggle<CR>
 nnoremap ; :
-
