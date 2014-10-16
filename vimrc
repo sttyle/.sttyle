@@ -12,7 +12,6 @@ set laststatus=2
 colorscheme xoria256
 
 filetype plugin on
-set gfn=Monospace\ 9 
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -51,3 +50,13 @@ nmap <silent> <C-N> :silent noh<CR>
 nmap <silent> <C-e> :NERDTreeToggle<CR>
 nmap <silent> <C-y> :TlistToggle<CR>
 nnoremap ; :
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline 
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
