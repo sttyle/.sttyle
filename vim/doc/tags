@@ -1,3 +1,7 @@
+:Large	LargeFile.txt	/*:Large*
+:Unlarge	LargeFile.txt	/*:Unlarge*
+LargeFile-copyright	LargeFile.txt	/*LargeFile-copyright*
+LargeFile.txt	LargeFile.txt	/*LargeFile.txt*
 \\	commentary.txt	/*\\\\*
 \\\	commentary.txt	/*\\\\\\*
 c-support	csupport.txt	/*c-support*
@@ -83,6 +87,8 @@ im_1	imaps.txt	/*im_1*
 imaps-usage	imaps.txt	/*imaps-usage*
 imaps.txt	imaps.txt	/*imaps.txt*
 imaps.txt-toc	imaps.txt	/*imaps.txt-toc*
+largefile	LargeFile.txt	/*largefile*
+largefile-history	LargeFile.txt	/*largefile-history*
 v_\\	commentary.txt	/*v_\\\\*
 xml-plugin-callbacks	xml-plugin.txt	/*xml-plugin-callbacks*
 xml-plugin-html	xml-plugin.txt	/*xml-plugin-html*

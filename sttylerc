@@ -9,8 +9,3 @@ alias untar="tar zxvf $@"
 xmlify() {
     cat $1 | xmllint --format -
 }
-
-shrink() {
-    sips --getProperty pixelWidth --getProperty pixelHeight  $1
-    sips --resampleHeightWidth 566 800 -s format png screen_shot.tiff --out $2
-}

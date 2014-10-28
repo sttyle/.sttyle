@@ -1,6 +1,5 @@
 [user]
     name = achesebr
-	email = achesebr@amazon.com
 
 [color]
     ui = true
@@ -12,13 +11,12 @@
 
 [merge]
     tool = p4merge
-    conflictstyle = diff3  # This option gives you the baseline code in the diff marks that
-                           # are added in your files during a conflict, in addition to the
-                           # usual "their" code and "mine" code. Makes conflict resolution
-                           # much easier.
+    conflictstyle = diff3
+ 
 [mergetool]
     prompt = false
     keepTemporaries = false
+
 [mergetool "p4merge"]
     cmd = /Applications/p4merge.app/Contents/MacOS/p4merge $BASE $LOCAL $REMOTE $MERGED
     trustExitCode = true
@@ -27,10 +25,9 @@
     pretty = %C(yellow)%h %C(cyan)%ae%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%C(blue) %cd%x08%x08%x08%x08%x08%x08%C(reset)%C(magenta bold)%d%C(reset)%C(normal) %s
 
 [grep]
-	lineNumber = true
-	extendRegexp = true
+    lineNumber = true
+    extendRegexp = true
 
-# And finally, some convenient, time-saving aliases I feel handicapped without.
 [alias]
     # Logging
     lg = log -10
@@ -45,13 +42,10 @@
 
     # Misc
     cm = commit
+    amend = commit --amend
     g = grep --break --heading --line-number
     co = checkout
     st = status -sb
     up = add -u
     unstage = reset --
-	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
-
-[push]
-	default = simple
-
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order

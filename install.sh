@@ -24,5 +24,15 @@ if [ ! -f ~/.gitconfig ]; then
     ln -s ~/.sttyle/git/gitconfig ~/.gitconfig
 fi
 
-grep -q sttylerc ~/.bashrc && echo "bashrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.bashrc
-grep -q sttylerc ~/.zshrc && echo "zshrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.zshrc
+if [ -f ~/.bashrc ]; then
+    grep -q sttylerc ~/.bashrc && echo "bashrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.bashrc
+else
+    touch ~/.bashrc
+    echo 'source ~/.sttyle/sttylerc' >> ~/.bashrc
+fi
+if [ -f ~/.zshrc ]; then
+    grep -q sttylerc ~/.zshrc && echo "zshrc already installed" || echo 'source ~/.sttyle/sttylerc' >> ~/.zshrc
+else
+    touch ~/.zshrc
+    echo 'source ~/.sttyle/sttylerc' >> ~/.zshrc
+fi
