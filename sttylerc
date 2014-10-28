@@ -5,6 +5,7 @@ export SHELL=/bin/zsh
 export EDITOR="vim"
 
 alias untar="tar zxvf $@"
+alias find_broken='find -L . -type l -ls'
 
 xmlify() {
     cat $1 | xmllint --format -
