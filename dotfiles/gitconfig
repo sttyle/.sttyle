@@ -6,8 +6,8 @@
 
 [core]
     editor = vim
-	excludesfile = ~/.gitignore_global
-	pager = less -FMRiX
+    excludesfile = ~/.gitignore_global
+    pager = less -FMRiX
 
 [merge]
     tool = p4merge
