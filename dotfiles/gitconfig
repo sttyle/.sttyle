@@ -1,5 +1,5 @@
-[user]
-    name = achesebr
+[include]
+    path = ~/.gitconfig2
 
 [color]
     ui = true
