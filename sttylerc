@@ -3,10 +3,20 @@
 export LSCOLORS=Bxfxcxdxcxegedabagacad
 export SHELL=/bin/zsh
 export EDITOR="vim"
+# source scripts/mvn_color.sh
 
+alias l='ls -1'
 alias untar="tar zxvf $@"
 alias find_broken='find -L . -type l -ls'
+alias mux=tmuxinator
 
 xmlify() {
     cat $1 | xmllint --format -
+}
+
+ppath() {
+    for i in $(echo $PATH | tr ":" "\n")
+    do
+        print $i
+    done
 }

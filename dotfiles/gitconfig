@@ -46,6 +46,7 @@
     g = grep --break --heading --line-number
     co = checkout
     st = status -sb
+    sq = rebase -i 
     up = add -u
     unstage = reset --
     dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
