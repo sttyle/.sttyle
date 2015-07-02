@@ -1,5 +1,6 @@
 " Load pathogen plugins and set runtime if runtime hook exists
 execute pathogen#infect()
+
 if filereadable($HOME . "/.vimruntimehook")
     source ~/.vimruntimehook
 endif
@@ -45,8 +46,6 @@ endif
   set textwidth=0           " Don't wrap words by default
   set virtualedit=block     " let blocks be in virutal edit mode
   set wildmenu              " This is used with wildmode(full) to cycle options
-
-  let mapleader=","
 
 "Longer Set options
   set cscopequickfix=s-,c-,d-,i-,t-,e-,g-,f-   " useful for cscope in quickfix
@@ -181,8 +180,9 @@ syntax on
     nmap <silent> <C-y> :TlistToggle<CR>
     nmap <C-Tab> :tabn<CR>
     nmap <C-S-Tab> :tabp<CR>
+    nmap <Leader>r zA
 
-    vnorem // y/<c-r>"<cr>
+    vnorem // y/<c-r>"<CR>
 
 "Functions
 fu! CscopeAdd() " Add Cscope database named .cscope.out

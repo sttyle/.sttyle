@@ -9,6 +9,7 @@ alias l='ls -1'
 alias untar="tar zxvf $@"
 alias find_broken='find -L . -type l -ls'
 alias mux=tmuxinator
+alias mv='mv -i'
 
 xmlify() {
     cat $1 | xmllint --format -
@@ -19,4 +20,8 @@ ppath() {
     do
         print $i
     done
+}
+
+bak() {
+    cp $1 "$1.bak"
 }

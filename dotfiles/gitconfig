@@ -41,6 +41,7 @@
     brc = checkout -b
 
     # Misc
+    pop = stash apply
     cm = commit
     amend = commit --amend
     g = grep --break --heading --line-number

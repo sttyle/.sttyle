@@ -77,6 +77,7 @@
 
 " Init Folklore: {{{1
 if exists("loaded_searchfold")
+    echo "already loaded"
     finish
 endif
 let loaded_searchfold = 1
