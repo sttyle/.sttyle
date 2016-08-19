@@ -3,13 +3,13 @@
 export LSCOLORS=Bxfxcxdxcxegedabagacad
 export SHELL=/bin/zsh
 export EDITOR="vim"
-# source scripts/mvn_color.sh
 
 alias l='ls -1'
 alias untar="tar zxvf $@"
 alias find_broken='find -L . -type l -ls'
 alias mux=tmuxinator
 alias mv='mv -i'
+alias adbss="adb shell screencap -p | sed 's/\r$//' > screen.png"
 
 xmlify() {
     cat $1 | xmllint --format -
@@ -25,3 +25,5 @@ ppath() {
 bak() {
     cp $1 "$1.bak"
 }
+
+source ~/.localrc

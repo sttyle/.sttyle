@@ -22,7 +22,7 @@
     trustExitCode = true
 
 [format]
-    pretty = %C(yellow)%h %C(cyan)%ae%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%C(blue) %cd%x08%x08%x08%x08%x08%x08%C(reset)%C(magenta bold)%d%C(reset)%C(normal) %s
+    pretty = %C(yellow)%h %C(cyan)%ae%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%C(blue) %ci%x08%x08%x08%x08%x08%x08%C(reset)%C(magenta bold)%d%C(reset)%C(normal) %s
 
 [grep]
     lineNumber = true
@@ -33,6 +33,7 @@
     lg = log -10
     lgd = log --pretty=full --date=iso
     lgg = log --graph --date=iso
+    lgf = log --format=full --date=iso -5
 
     # Branching
     br = branch
@@ -41,6 +42,7 @@
     brc = checkout -b
 
     # Misc
+    gud = commit -a --amend -C HEAD
     pop = stash apply
     cm = commit
     amend = commit --amend
