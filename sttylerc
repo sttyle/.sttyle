@@ -10,6 +10,7 @@ alias find_broken='find -L . -type l -ls'
 alias mux=tmuxinator
 alias mv='mv -i'
 alias adbss="adb shell screencap -p | sed 's/\r$//' > screen.png"
+export PATH=$PATH:$HOME/.sttyle/scripts
 
 xmlify() {
     cat $1 | xmllint --format -

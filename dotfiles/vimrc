@@ -207,5 +207,3 @@ autocmd FileType c,cpp,java,php,rb,pl autocmd BufWritePre <buffer> :%s/\s\+$//e
 if (v:version >= 700)
   au FileType mail set spell
 endif
-
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
