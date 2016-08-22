@@ -1,0 +1,20 @@
+#! /bin/sh
+
+panel&
+sxhkd&
+
+bspc monitor -d I II III IV V VI
+
+bspc config border_width         2
+bspc config focused_border_color "#c5c8c6"
+bspc config normal_border_color  "#969896"
+bspc config window_gap           8
+bspc config top_padding          16
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config history_aware_focus  true
+bspc config click_to_focus       true
+bspc config presel_feedback_color "#c5c8c6"
+
+feh --bg-scale ~/.sttyle/config/wallpaper.png&

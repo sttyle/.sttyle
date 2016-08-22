@@ -1,33 +1,37 @@
-URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true
+urxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true
 
-URxvt.cursorBlink: true
+urxvt.cursorBlink:  true
 urxvt.scrollBar:	false
-
 urxvt.depth:		32
-urxvt.background:	[93]#101010
+urxvt.transparent: 	true
+urxvt.shading:		32
 
-URxvt*foreground:	#B2B2B2
-URxvt*cursorColor:	#FFFFFF
-
-URxvt.transparent: 	true
-URxvt.shading:		30
-
-! Molokai theme
-URxvt*background: #101010
-URxvt*foreground: #d0d0d0
-URxvt*color0: #101010
-URxvt*color1: #960050
-URxvt*color2: #66aa11
-URxvt*color3: #c47f2c
-URxvt*color4: #30309b
-URxvt*color5: #7e40a5
-URxvt*color6: #3579a8
-URxvt*color7: #9999aa
-URxvt*color8: #303030
-URxvt*color9: #ff0090
-URxvt*color10: #80ff00
-URxvt*color11: #ffba68
-URxvt*color12: #5f5fee
-URxvt*color13: #bb88dd
-URxvt*color14: #4eb4fa
-URxvt*color15: #d0d0d0
+! special
+Xcursor.theme:  Ring-Black
+*.foreground:   #a39a90
+*.background:   #16130f
+*.cursorColor:  #a39a90
+! black
+*.color0:       #16130f
+*.color8:       #5a5047
+! red
+*.color1:       #826d57
+*.color9:       #826d57
+! green
+*.color2:       #57826d
+*.color10:      #57826d
+! yellow
+*.color3:       #6d8257
+*.color11:      #6d8257
+! blue
+*.color4:       #6d5782
+*.color12:      #6d5782
+! magenta
+*.color5:       #82576d
+*.color13:      #82576d
+! cyan
+*.color6:       #576d82
+*.color14:      #576d82
+! white
+*.color7:       #a39a90
+*.color15:      #dbd6d1
