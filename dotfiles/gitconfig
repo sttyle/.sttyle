@@ -1,5 +1,6 @@
-[include]
-    path = ~/.gitconfig2
+[user]
+    name = pockets
+    email = arpchesebro@gmail.com
 
 [color]
     ui = true
@@ -53,6 +54,6 @@
     up = add -u
     unstage = reset --
     dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
-[user]
-	email = arpchesebro@gmail.com
-	name = pockets
+
+[include]
+    path = ~/.gitconfig2
