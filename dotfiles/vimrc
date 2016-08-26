@@ -207,5 +207,3 @@ autocmd FileType c,cpp,java,php,rb,pl autocmd BufWritePre <buffer> :%s/\s\+$//e
 if (v:version >= 700)
   au FileType mail set spell
 endif
-
-source $PIP_PATH/powerline/bindings/vim/plugin/powerline.vim
