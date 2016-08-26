@@ -28,6 +28,6 @@ fi
 
 feh --bg-scale ~/.sttyle/config/wallpaper.png&
 
-sxhkd&
-panel&
+sxhkd &
+panel &
 exec bspwm

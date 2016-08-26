@@ -1,6 +1,5 @@
 #! /bin/sh
 
-panel&
 sxhkd&
 
 bspc monitor -d I II III IV V VI
