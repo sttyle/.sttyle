@@ -41,6 +41,7 @@
     brd = branch -D
     brm = branch -M
     brc = checkout -b
+    brcm = checkout -t origin/mainline -b 
 
     # Misc
     gud = commit -a --amend -C HEAD
