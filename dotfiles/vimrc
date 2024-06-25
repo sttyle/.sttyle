@@ -99,7 +99,7 @@ EOT
                                " wrapmargin inserts breaks if you exceed its value
 
 "Set colorscheme.  This is a black background colorscheme
-colorscheme xoria256
+"colorscheme xoria256
 
 " viminfo options
   " read/write a .viminfo file, don't store more than
@@ -208,3 +208,7 @@ autocmd FileType javascript set tabstop=2|set shiftwidth=2|set expandtab|set sof
 if (v:version >= 700)
   au FileType mail set spell
 endif
+
+nnoremap \Z :setlocal foldexpr=(getline(v:lnum)=~@/)?0:1 foldmethod=expr foldlevel=0 foldcolumn=2 foldminlines=0<CR><CR>
+nnoremap \z :setlocal foldexpr=(getline(v:lnum)=~@/)?1:0 foldmethod=expr foldlevel=0 foldcolumn=2 foldminlines=0<CR><CR>
+nnoremap \F :setlocal foldmethod=manual<CR><CR>
